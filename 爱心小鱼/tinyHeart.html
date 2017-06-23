@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>tinyHeart</title>
+		<style type="text/css">
+			body{
+				padding-top: 10px;
+			}
+			.all_bg{
+				width: 800px;
+				height: 600px;
+				margin: 0px auto;
+			}
+			#allcanvas{
+				position: relative;
+				width: 800px;
+				height: 600px;
+				margin: 0px;
+			}
+			/*canvas1在前面,canvas2在后面：背景与海葵*/
+			#canvas1{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: 1;/*z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+                                                        注释：元素可拥有负的 z-index 属性值。
+                                                        注释：Z-index 仅能在定位元素上奏效（例如 position:absolute;）！*/
+			}
+			#canvas2{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<di class="all_bg">
+			<div id="allcanvas">
+				<canvas id="canvas1" width="800" height="600"></canvas>
+				<canvas id="canvas2" width="800" height="600"></canvas>
+			</div>
+		</div>
+		
+		
+		
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/commonFunctions.js"></script>
+		<script type="text/javascript" src="js/background.js"></script>
+		<script type="text/javascript" src="js/ane.js"></script>
+		<script type="text/javascript" src="js/fruit.js"></script>
+		<script type="text/javascript" src="js/mom.js"></script>
+		<script type="text/javascript" src="js/baby.js"></script>
+		<script type="text/javascript" src="js/collision.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/wave.js"></script>
+		<script type="text/javascript" src="js/halo.js"></script>
+		
+	</body>
+</html>
